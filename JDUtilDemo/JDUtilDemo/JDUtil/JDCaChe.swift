@@ -13,12 +13,12 @@ public struct Cache {
     
     // 公共图片缓存（用例截图、用户头像缩略图等）
     //    static let sharedImageCache = SDImageCache(namespace: "sharedImageCache")
-    static let sharedImageCache = SDImageCache.sharedImageCache()
+    public static let sharedImageCache = SDImageCache.sharedImageCache()
     
     // 用户图片缓存（头像、背景等）
-    static let userImageCache = SDImageCache(namespace: "userImageCache")
+    public static let userImageCache = SDImageCache(namespace: "userImageCache")
     
-    struct Assets {
+    public struct Assets {
         static let WechatLogo = UIImage(named: "wechat", inBundle: nil, compatibleWithTraitCollection: nil)
         static let wechatMomentsLogo = UIImage(named: "wechat_moments", inBundle: nil, compatibleWithTraitCollection: nil)
         static let QQLogo = UIImage(named: "qq", inBundle: nil, compatibleWithTraitCollection: nil)
