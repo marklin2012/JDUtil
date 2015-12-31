@@ -20,4 +20,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.module_name = "JDUtil"
+
+  s.dependency "SDWebImage", "~> 3.7.3"
   end
