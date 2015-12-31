@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JDUtil"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Some util for extension in JD"
   s.description  = <<-DESC
                     Some util for extension in JD

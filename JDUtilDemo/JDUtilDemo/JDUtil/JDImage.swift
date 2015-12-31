@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIImage {
-    static func dataFromUrl (string: String, block: (UIImage?) -> Void) {
+public extension UIImage {
+    public static func dataFromUrl (string: String, block: (UIImage?) -> Void) {
         if let url = NSURL(string: string) {
             dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
                 if let data = NSData(contentsOfURL: url) {
@@ -22,8 +22,8 @@ extension UIImage {
     }
 }
 
-extension UIImage {
-    func resize(size: CGSize) -> UIImage {
+public extension UIImage {
+    public func resize(size: CGSize) -> UIImage {
         var newSize: CGSize = CGSizeZero
         
         if (self.size.width / size.width) < (self.size.height / size.height) {
